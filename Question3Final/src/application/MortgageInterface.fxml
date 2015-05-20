@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.BorderPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="852.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MortgageInterfaceController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="837.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MortgageInterfaceController">
    <children>
       <SplitPane dividerPositions="0.42705882352941177" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <items>
@@ -43,8 +43,8 @@
                <children>
                   <GridPane layoutX="38.0" layoutY="154.0" prefHeight="398.0" prefWidth="222.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <columnConstraints>
-                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="347.0" minWidth="10.0" prefWidth="340.0" />
-                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="199.0" minWidth="10.0" prefWidth="142.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="347.0" minWidth="10.0" prefWidth="278.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="204.0" minWidth="10.0" prefWidth="204.0" />
                     </columnConstraints>
                     <rowConstraints>
                       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
@@ -53,9 +53,9 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                      <children>
-                        <Label text="Housing+ other obligations:" GridPane.rowIndex="1" />
-                        <Label text="Maximum payment allowed:" GridPane.rowIndex="2" />
-                        <Label text="Amount of mortgage able to be financed:" GridPane.rowIndex="3" />
+                        <Label text="Housing + Other Obligations:" GridPane.rowIndex="1" />
+                        <Label text="Maximum Payment Allowed:" GridPane.rowIndex="2" />
+                        <Label text="Financiable Mortgage Amount:" GridPane.rowIndex="3" />
                         <Label fx:id="housingPayment" text="Label" GridPane.columnIndex="1" />
                         <Label fx:id="otherObligations" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                         <Label fx:id="maximumPayment" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />

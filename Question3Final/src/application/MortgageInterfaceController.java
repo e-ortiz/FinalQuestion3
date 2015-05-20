@@ -60,13 +60,17 @@ public class MortgageInterfaceController {
 	double OtherObligationsAmount = ((grossIncomeAmount / 12) * 0.36)
 			- monthlyDebtAmount;
 
-	private double MaximumPaymentAmount() {
+	protected double MaximumPaymentAmount() {
 		if (HousingPaymentAmount >= OtherObligationsAmount)
 			return OtherObligationsAmount;
 		else
 			return HousingPaymentAmount;
 	}
-	
+
+	protected double FinancedMortgageAmount() {
+		return ((MaximumPaymentAmount() * (yearTerm * 12))  - downPaymentAmount) / (yearTerm * 12) * interestAmount;
+	}
+
 	// Setters for Label Results -> String
 	public void setHousingPayment() {
 		housingPayment.setText(String.valueOf(HousingPaymentAmount));
@@ -80,9 +84,8 @@ public class MortgageInterfaceController {
 		maximumPayment.setText(String.valueOf(MaximumPaymentAmount()));
 	}
 
-	public void setFinancedMortgage(double amount) {
-		financedMortgage.setText(String.valueOf(amount));
+	public void setFinancedMortgage() {
+		financedMortgage.setText(String.valueOf(FinancedMortgageAmount()));
 	}
-	
 
 }
